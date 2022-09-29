@@ -1,0 +1,87 @@
+x = 10
+print(x)
+
+# Introvert     // Extrovert
+# calm          // speaks more
+# less social   // loud
+# speaks less   // more social
+
+y = 100
+print(y)
+print(type(y))
+# int ---- 89 , -12 ,0
+
+t = 10.0
+print(t)
+print(type(t))
+# float --- decimal points
+
+i = "chinmay"
+print(i)
+print(type(i))
+#str --- 'c', "chinmay","chinmay010","chin7@"
+
+k = 'A'
+print(k)
+print(type(k))
+
+l = True
+print(l)
+print(type(l))
+# boolean True or False
+# int , float, boolean , string
+
+# variables -- indentifier 
+
+# A-Z  - City
+# a-z  - city123
+# _    - _newCity
+
+# 9hello -  invalid
+# 9qwerty - invalid
+# %hello - invalid
+
+# comparison  < , > , <= , >= , != 
+# entity  <  entity -----> boolean
+
+s = 10
+t = 5
+print(5 > 10)
+print(5 == 5)
+print(5 <= 6)
+print(5 >= 6)
+print(5 != 7)
+print(6 < 8)
+
+# logical operator
+# and or and not
+
+# and 
+# True  and  True ------>  True
+# False and  True ------>  False
+# True  and  False ------> False
+# False and  False ------> False
+
+print(5 == 5 and 7 > 6)  # True
+print(5 != 5 and 7 > 6)  # False
+print(5 == 5 and 7 < 6)  # False
+print(5 != 5 and 7 < 6)  # False
+
+
+# or 
+# True  or  True ------>  True
+# False or  True ------>  True
+# True  or  False ------> True
+# False or  False ------> False
+
+print(5 == 5 or 7 > 6)  # True
+print(5 != 5 or 7 > 6)  # True
+print(5 == 5 or 7 < 6)  # True
+print(5 != 5 or 7 < 6)  # False
+
+#not
+#True  -- False
+#False -- True 
+
+print(not True)
+print(not False)
