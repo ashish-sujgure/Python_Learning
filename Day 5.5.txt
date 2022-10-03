@@ -1,0 +1,129 @@
+#           0        1       2
+names = ["chinmay","ram","mayuri"]
+print(names)
+print(type(names))
+
+# program 2
+info = ["chinmay","deshpande",7709192441]
+print(info)
+
+#program 3
+marks = [11,22,33,44,55]
+print(marks)
+
+# program 4 
+q1 = len(marks)
+print(q1)
+
+# slicing
+#           0       1          2          3       4 
+cities = ["pune","nagpur","banglore","chennai","kolkata"]
+#         -5      -4          -3           -2          -1
+
+q2 = cities[1]
+q3 = cities[-4]
+print(q2)
+print(q3)
+#[startIndex:endIndex:steps(by default1)]
+q4 = cities[1:4]
+print(q4)
+
+q5 =cities[1:4:2]
+print(q5)
+
+# reverse list
+q6 = cities[::-1]
+print(q6)
+
+# as it is 
+q7 = cities[::]
+print(q7)
+
+#              0         1          2             3
+countries = ["india","pakistan","bangladesh","srilanka"]
+# print all element of list
+
+for item in countries:
+  print (item)
+
+# using range()
+for x in range(10):
+  print(x)
+
+for x in range(1,8):
+  print(x)
+
+for x in range(2,22,2):
+  print(x)
+
+#              0        1           2            3
+countries = ["india","pakistan","bangladesh","srilanka"]
+for x in range(len(countries)):
+  print(countries[x])
+
+# Day2
+
+
+# concatenation
+i = [11,22,33]
+q = [33,44,55]
+o = q+i
+print(o)
+print(i * 2)  # [11,22,33,11,22,33]
+
+
+#len()
+#max()
+#min()
+
+e = [11,22,33,66,11]
+q8 = max(e)
+print(q8)
+
+q9 = min(e)
+print(q9)
+
+
+# Methods
+# append:returns None
+vegetable = ["tomato","potato","brinjal"]
+q10 = vegetable.append("cabbage")
+print(q10)
+print(vegetable)
+
+# insert:None
+q11 = vegetable.insert(1,"carrot")
+print(q11)
+print(vegetable)
+
+#            0       1       2       3         4
+animals = ["tiger","lion","rabbit","panthar","lion"]
+
+#pop:lastElement
+q12 = animals.pop()
+print(q12)
+print(animals)
+
+q14 = animals.pop(2)
+print(q14)
+print(animals)
+
+#remove:None
+q13 = animals.remove('lion')
+print(animals)
+print(q13)
+
+#index():int
+animals = ["tiger","lion","rabbit","panthar"]
+q15 = animals.index('lion')
+print(q15)
+
+#reverse:none (changes the actual list)
+q16 = animals.reverse()
+print(q16)
+print(animals)
+
+# only removes first occurance
+animals = ["tiger","lion","rabbit","panthar","lion"]
+animals.remove("lion")
+print(animals)
