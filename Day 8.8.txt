@@ -1,0 +1,96 @@
+list = [11,22,33]
+listA = list
+
+listA[0] = 66
+print(listA)
+print(list)
+
+#-----------------------------------------------
+
+# copy()
+listC = [11,22,33]
+listD = listC.copy()
+
+print(listC)
+print(listD)
+
+listC[2] = 99
+print(listC)  # 11,22,99
+print(listD)  # 11,22,33
+
+
+# String 
+# Defining the string
+first_name = 'chinmay deshpande'
+first_name2 = "chinmay deshpande"
+
+print(first_name)
+print(first_name2)
+
+multiline = """  
+Hello i am learing python
+Also i am javascript 
+"""
+print(multiline)
+
+multilineTwo = '''
+Hello i am learing python
+Also i am javascript 
+'''
+print(multilineTwo)
+
+# string stores the value by index
+city = "pune"
+# 0    1   2   3
+# p    u   n   e 
+
+print(city[0])
+print(city[2])
+
+city2 = "nagpur"
+#0 1 2 3 4 5
+#n a g p u r 
+
+# basic
+for char in city2:
+  print(char)
+
+# using range()
+for x in range(1,9):
+  print(x)
+
+for x in range(2,22,2):
+  print(x)
+
+for x in range(4):
+  print(x)
+
+for x in range(len(city2)):
+  print(x)
+
+for x in range(len(city2)):
+  print(city2[x])
+
+city3 ="mumbai"
+for char in city3:
+  print(char)
+
+for x in range(len(city3)):
+  print(city3[x])
+  # slice 
+  #0      1    2    3    4    5   6    7     8    9
+  # c     h    a    n    d    r   a    p     u    r
+  # -10  -9   -8   -7   -6   -5  -4   -3    -2   -1
+
+city4 = "chandrapur"
+#city4[startIndex:EndIndex:Steps]
+city4[2]
+city4[1:7]
+city4[0:10:2]
+city4[-2]
+city4[1:-2]
+city4[::-1]
+
+# lenght of string 
+q1 = len(city4)
+print(q1)
