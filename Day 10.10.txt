@@ -1,0 +1,65 @@
+# string 
+# slicing
+# loop (range , basic)
+# multiline string 
+# len()
+# ways to define string
+
+# upper()
+city = "pune"
+q1 = city.upper()
+print(q1)
+
+#lower()
+city2 = "Nagpur"
+q2 = city2.lower()
+print(q2)
+
+# isupper()
+city3 = "JAIPUr"
+q3 = city3.isupper()
+print(q3)
+
+# islower()
+city4 = "Jaipur"
+q4 = city4.islower()
+print(q4)
+
+#capitalize()
+city5 = "mumbai"
+q5 = city5.capitalize()
+print(q5)
+
+#startswith()
+
+city5 = "nashik"
+q6 = city5.startswith("n")
+print(q6)
+
+
+#endswith()
+city6 = "wardha"
+q7 = city6.endswith('dha')
+print(q7)
+
+#index
+
+city7 = "indore"
+# 0   1   2   3   4   5
+# i   n   d   o   r   e
+
+q8 = city7.index('d')
+print(q8)
+# q9 = city7.index('D')
+# print(q9)
+
+
+#count 
+city8 = "chandrapur"
+q10 = city8.count('n')
+print(q10)
+
+# replace
+city9 = "I am learning javascript"
+q11 = city9.replace('javascript','python')
+print(q11)
