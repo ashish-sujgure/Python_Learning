@@ -1,0 +1,119 @@
+#List 
+#         0        1       2     3
+names = ["amol","poorva","ram","sham"]
+numbers = [11,22,33,44,55,66]
+mixedList = ["chinmay","deshpande",7709192441]
+print(names)
+
+# List stores the value by index
+print(names[0])
+
+# How to length of List ?
+q1 = len(numbers)
+print(q1)
+
+#max()
+q2  = max(numbers)
+print(q2)
+
+#min()
+q3 = min(numbers)
+print(q3)
+
+#     0 1  2   3  4  5
+k = [11,22,33,44,55,66]
+print(k[1])
+print(k[len(k)-1])
+# length -1 is always last index
+
+# loops
+#           0       1        2        3
+fruits = ["apple","mango","banana","grapes"]
+
+# loop  method : 1
+for item in fruits:
+  print(item)
+
+# loop method : 2 using range
+
+for i in range(10):
+  print(i)
+
+for i in range(1,8):
+  print(i)
+
+for i in range(2,22,2):
+  print(i)
+
+for i in range(3,31,3):
+  print(i)
+
+#          0        1         2       3
+fruits = ["apple","mango","banana","grapes"]
+for x in range(4):
+  #print(x)
+  print(fruits[x])
+
+# methods
+a1  = fruits.index("mango")
+print(a1)
+
+a2 = fruits.append('papaya')
+print(a2)
+print(fruits)
+
+fruits.insert(2,"chikoo")
+print(fruits)
+
+listA = [22,33,44]
+listB = [55,66,77]
+
+listA.extend(listB)
+print(listA)
+listB.extend(listA)
+print(listB)
+
+listC = [23,33,44,55,44,66,88,44]
+a3 = listC.count(44)
+print(a3)
+
+# remove by  index
+listD = ["apple","mango","banana","grapes"]
+# listD.pop()
+# print(listD)
+listD.pop(2)
+print(listD)
+
+# remove by element
+listD.remove('apple')
+print(listD)
+
+listE = ["rahul","ajay","sameer", "rohit"]
+listE.sort()
+print(listE)
+
+listE.reverse()
+print(listE)
+
+listE.clear()
+print(listE)
+
+
+x = 10 
+x1 = x
+print(x)
+print(x1)
+
+x1 = 900
+print(x)
+print(x1)
+
+# list 
+listF = [11,22,33]
+listG = listF
+print(listF)
+print(listG)
+
+listF[2] = 1000
+print(listF)
+print(listG)
