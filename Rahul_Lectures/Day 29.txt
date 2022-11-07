@@ -1,0 +1,147 @@
+#################################################
+#  29.10.2022 4.00 PM
+#################################################
+#  TOPICS TO BE COVERED
+#  👉 DICTIONARY  IN PYTHON
+#  https://docs.python.org/3/library/stdtypes.html#mapping-types-dict
+#################################################
+
+
+dict3  = {}
+print(type(dict3))
+print(len(dict3))
+
+
+
+# key : value
+
+# accessing  dict data 
+# using [] notation or indexing/keys 
+
+dict_student = {
+    "Name" : "Vivek",
+    "Class" :  "FYJC",
+    "PIN" : 442404,
+    "Sub" : ['P' ,"C" , "M" ,"IT"]
+}
+
+
+print(dict_student["Class"])
+print(dict_student["PIN"])
+
+#              0    1    2    3    4    5    6    7
+list_alpha = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H']
+print(list_alpha[3])
+print(list_alpha[7])
+
+print(dict_student["Name"])
+
+
+# accessing  dict data  using methods 
+# items
+
+print("*********")
+
+print(dict_student.items())
+
+
+
+for i in list_alpha:
+    print(i)
+
+#    0                      1               2                  3
+#       0       1           0       1       0       1          0            1
+#  [('Name', 'Vivek'), ('Class', 'FYJC'), ('PIN', 442404), ('Sub', ['P', 'C', 'M', 'IT'])]
+
+for i in dict_student.items():
+    print(i)
+
+
+
+for i in dict_student.items(): # keys
+    print(i[0])
+
+
+for i in dict_student.items(): # values 
+    print(i[1])
+
+
+# unpacking of tuples
+print(" **********  ")
+
+for j , i in dict_student.items(): # key and value pair 
+    print(j , i)
+
+
+# keys 
+print(" **********  ")
+
+for i in dict_student.keys():
+    print(i)
+
+# values
+print(" **********  ")
+for i in dict_student.values():
+    print(i)
+
+
+
+# get 
+
+dict_student = {
+    "Name" : "Vivek",
+    "Class" :  "FYJC",
+    "PIN" : 442404,
+    "Sub" : ['P' ,"C" , "M" ,"IT"]
+}
+
+
+print(" **********  ")
+print(dict_student.get('Name'))
+print(dict_student["Name"])
+
+print(dict_student.get('RollNum'))
+# print(dict_student['RollNum']) #KeyError:
+
+
+print(dict_student.get('RollNum', "The enterd key does not exist"))
+print(dict_student.get('PIN', "The enterd key does not exist"))
+
+
+#update
+
+# print(dict_student.update({"Sub" : ['P' ,"C" , "M" , "B","IT"]}))
+
+
+dict_student.update({"PIN" : 442405})
+
+print(dict_student)
+# using [] notation or indexing/keys
+
+dict_student["PIN"] = 442406
+print(dict_student)
+
+
+dict_student["RollNum"] = 503
+print(dict_student)
+
+dict_student["RollNum"] = 505
+print(dict_student)
+
+dict_student["SeatNo."] = 23
+print(dict_student)
+
+
+dict_student.update({"PIN" : 442410 , "Attendance" : "P"})
+print(dict_student)
+
+
+dict_teachers ={
+    "Staff ID" :  505,
+    "SalGrade" : "S1"
+ }
+
+
+dict_student.update(dict_teachers)
+
+print(dict_student)
