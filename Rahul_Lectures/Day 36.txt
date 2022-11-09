@@ -1,0 +1,91 @@
+#################################################
+#  09.11.2022 9.00AM
+#################################################
+#  TOPICS TO BE COVERED
+# 👉 FILE HANDLING  IN PYTHON
+#################################################
+
+
+# BASICS OF FILE HANDLING 
+# MODES OF OPERARTION
+# 
+
+# REVISION
+
+# to create an empty txt file
+
+f = open(r"C:\Users\RAHUL\Documents\OnePython\5. Sept DS 9AM 4PM\CLASS\sample2.txt","w")
+f.write("Line 1")
+f.write("Line 2")
+f.write("Line 3")
+f.write("Line 4 , Line5 , Line6 ")
+f.write("\nLine 7 , \nLine8 , \nLine9 ")
+print(f.mode)
+f.close()
+
+# appending a file 
+f2 = open(r"C:\Users\RAHUL\Documents\OnePython\5. Sept DS 9AM 4PM\CLASS\sample2.txt","a")
+f2.write("\nLine10")
+f2.close()
+# reading data from txt file
+
+
+f3 = open(r"C:\Users\RAHUL\Documents\OnePython\5. Sept DS 9AM 4PM\CLASS\sample2.txt") # default mode is "r" i.e read mode
+print(f3.mode)
+print(f3.read(10))
+print(f3.read(10))
+print(f3.read(10))
+print(f3.read(10))
+f3.close()
+
+# resetting the cursor position
+print("*******")
+f3 = open(r"C:\Users\RAHUL\Documents\OnePython\5. Sept DS 9AM 4PM\CLASS\sample2.txt") # default mode is "r" i.e read mode
+
+print(f3.read(10))
+print(f3.read(10))
+f3.seek(0) # at the starting of the file
+f3.seek(20) # at 20th character  of the file
+print(f3.read(10))
+f3.close()
+
+# reading multiple lines
+print("*******")
+f4 = open(r"C:\Users\RAHUL\Documents\OnePython\5. Sept DS 9AM 4PM\CLASS\sample2.txt","r")
+print(f4.readline())
+print(f4.readline())
+print(f4.readline())
+print(f4.readline())
+
+f4.close()
+# using for loop
+print("***using for loop****")
+f4 = open(r"C:\Users\RAHUL\Documents\OnePython\5. Sept DS 9AM 4PM\CLASS\sample2.txt","r")
+for i in f4:
+    print(i)
+
+f4.close()
+
+# data in the form of list
+
+print("***using  readlines****")
+f5 = open(r"C:\Users\RAHUL\Documents\OnePython\5. Sept DS 9AM 4PM\CLASS\sample2.txt","r")
+print(f5.readlines())
+# print(f5.readlines()[3])
+f5.close()
+
+# using content manager 
+
+with open(r"C:\Users\RAHUL\Documents\OnePython\5. Sept DS 9AM 4PM\CLASS\sample2.txt","r") as f:
+    # print(f.read(5))
+    print(f.mode)
+
+
+
+# types of file is pyton
+# text file  = human readable , txt , doc s, csv
+# binary files = non readable  , img, jpeg, mp3
+
+
+# binary 
+# txt files are special binary files
