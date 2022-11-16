@@ -1,0 +1,44 @@
+#################################################
+#  13.11.2022 04.00PM
+#################################################
+#  TOPICS TO BE COVERED
+# 👉 DIRECTORY HANDLING  IN PYTHON
+#################################################
+
+# OS module
+
+import os
+# help(os)
+# print(dir(os))
+
+
+# cwd current working directory
+print(os.getcwd())
+
+# getting list of available directories
+
+for i in os.listdir():
+    print(i)
+
+# changing the working directory
+
+os.chdir(r"C:\Users\RAHUL\Documents")
+print(os.getcwd())
+
+for i in os.listdir():
+    print(i)
+
+# creating a folder/dir 
+
+# os.mkdir("Staff1")
+# for i in range(6):
+#     os.mkdir("Staff{}".format(i))
+
+# to create multilevel dir/folders
+# os.makedirs(r'C:\Users\RAHUL\Documents\Staff6\HR')
+
+# removing the dir
+# os.rmdir('Staff2')
+
+# removing parent directories
+os.removedirs(r'Staff6') # not recommended
