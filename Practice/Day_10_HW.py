@@ -25,14 +25,14 @@ d = "DELHI"
 for i in range(len(h)):
     print(h[i], end=' ')
 
-print("********************")
+print("\n********************")
 
 for i in range(len(c)):
     print(c[i], end=' ')
-print("********************")
+print("\n********************")
 for i in range(len(d)):
     print(d[i], end=' ')
-print("********************")
+print("\n********************")
 # 4.  find number of spaces in song2
 #     find count of Ganga in song2
 #     replace  Ganga with "GANGA" in song2
